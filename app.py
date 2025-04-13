@@ -12,7 +12,7 @@ process = None
 
 @app.route("/")
 def home():
-    return "✅ Flask is running..."
+    return "Flask is running..."
 
 @app.route("/start_prediction", methods=["POST"])
 def start_prediction():
@@ -41,5 +41,5 @@ def stop_prediction():
         return jsonify({"message": "No prediction process to stop."})
 
 if __name__ == "__main__":
-    print("🔥 Flask server is starting...")
+    print("Flask server is starting...")
     app.run(debug=True)
